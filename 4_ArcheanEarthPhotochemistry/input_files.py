@@ -27,6 +27,20 @@ def create_Sun_35Ga():
         )
 
 def create_atmosphere_init(setting_file='settings.yaml', T_surf=288, T_trop=180, Kzz=1e6):
+    """Generates an initial "atmosphere.txt" file for the photochemical model using the
+    pressure boundary conditions in a settings file.
+
+    Parameters
+    ----------
+    setting_file : str, optional
+        The settings file for the photochemical model, by default 'settings.yaml'
+    T_surf : int, optional
+        An assumed surface temperature in K, by default 288
+    T_trop : int, optional
+        An assume stratosphere temperature in K, by default 180
+    Kzz : float, optional
+        An assume vertically constant eddy diffusion (cm^2/s), by default 1e6
+    """    
     
     # We will need the solar spectrum
     create_Sun_35Ga()
@@ -79,6 +93,7 @@ def create_atmosphere_init(setting_file='settings.yaml', T_surf=288, T_trop=180,
 
     # Output the P-T profile into a file that can be read by the photochemical model
     c.out2atmosphere_txt('atmosphere_init.txt',eddy=np.ones(len(c.T))*Kzz,overwrite=True)
+
 
 ADIABATCLIMATE_SPECIES = \
 """
