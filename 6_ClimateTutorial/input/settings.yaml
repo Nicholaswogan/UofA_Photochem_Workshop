@@ -1,0 +1,38 @@
+
+atmosphere-grid:
+  number-of-layers: 50 # number of atmospheric layers
+  
+planet:
+  planet-mass: 5.972e27 # Earth mass (grams)
+  planet-radius: 6.371e8 # Earth radius (cm)
+  number-of-zenith-angles: 4 # number of zenith angles to integrate over. 
+  surface-albedo: 0.25
+  # Optionally include `photon-scale-factor`. The stellar flux
+  # is scaled by this factor. This is useful for modeling
+  # different planets in the same solar system. Default value is 1.0 (no scaling).
+  # photon-scale-factor: 0.4286 # Mars
+  # photon-scale-factor: 1.913 # Venus
+  
+# This dictionary sets all optical properties. Separate optical properties
+# are set for IR vs. solar wavelengths
+optical-properties:
+  ir:
+    # `k-method` is the method for mixing k-distributions. Options are
+    #
+    # k-method: RandomOverlap
+    # k-method: RandomOverlapResortRebin
+    # k-method: AdaptiveEquivalentExtinction
+    # 
+    # These methods are explained in Amundsen et al. (2017) (DOI: 10.1051/0004-6361/201629322).
+    k-method: RandomOverlapResortRebin
+
+    # Here you specify opacites. You can see avaliable opacities by looking in
+    # `clima/data/` folder. `CIA`, `rayleigh`, `photolysis-xs` and `water-continuum`
+    # are optional. If you omit these keys then these opacities will not be included.
+    # `k-distributions` is the only required key. The simplest way to set opacities
+    # is to just to turn them `on`, as shown below, which will use all available 
+    # opacities
+    opacities: {k-distributions: on, CIA: on, rayleigh: on}
+  solar:
+    k-method: RandomOverlapResortRebin
+    opacities: {k-distributions: on, CIA: on, rayleigh: on}
