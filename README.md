@@ -2,7 +2,7 @@
 
 This repository contains the tutorials for the Nov. 5th & 6th workshop on the [Photochem](https://github.com/Nicholaswogan/photochem) software at the University of Arizona, Tucson.
 
-## General workshop structure
+## General Workshop Structure
 
 Both workshop days will have the following general structure:
 
@@ -14,7 +14,7 @@ To accomplish this, we will walk through each of the directories in this reposit
 
 If, miraculously, we have extra time during any workshop day, then we will take a look at the notebooks in the `ExtraTutorials` folder.
 
-## Workshop Schedule
+## Detailed Workshop Schedule
 
 **Day 1: Introduction to photochemical modeling with Photochem**
 
