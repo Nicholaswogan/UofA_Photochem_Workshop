@@ -16,7 +16,7 @@ If, miraculously, we have extra time during any workshop day, then we will take 
 
 ## Workshop Schedule
 
-**Day 1: Introduction to photochemical modeling**
+**Day 1: Introduction to photochemical modeling with `Photochem`**
 
 Nov. 5th, Kuiper Space Sciences Building, Room 330, from 2:00 PM - 5:00 PM
 
@@ -28,7 +28,7 @@ Nov. 5th, Kuiper Space Sciences Building, Room 330, from 2:00 PM - 5:00 PM
 - `4_ArcheanEarthPhotochemistry` - Problem set: Simulating the Archean Earth's photochemistry with Photochem (~60 min)
 - `ExtraTutorials` - If there is extra time
 
-**Day 2: Introduction to climate modeling**
+**Day 2: Introduction to climate modeling with `Photochem`**
 
 Nov. 6th, Kuiper Space Sciences Building, Room 331, from 10:00 AM - 1:00 PM
 
