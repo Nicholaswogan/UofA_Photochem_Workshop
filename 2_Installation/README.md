@@ -8,7 +8,7 @@ You can install Photochem, and the other packages needed for this workshop, by f
 
 **If you already have `conda`, skip to Step 2.**
 
-To install Photochem, you will need the `conda` package manager. There are many ways to install `conda`, but the following is my preferred method. Open a terminal, run the following command, and accept every prompt:
+To install Photochem, you will need the `conda` package manager. There are many ways to install `conda`, but the following is my preferred method. Open a terminal, run the following commands, and accept every prompt:
 
 ```sh
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
