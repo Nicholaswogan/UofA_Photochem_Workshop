@@ -10,7 +10,7 @@ Both workshop days will have the following general structure:
 2. Coding demo by Nick, where participants can follow along on their laptops (45 to 60 min)
 3. Problem set for participants (60 to 90 min)
 
-To accomplish this, we will walk through each of the directories in this repository (e.g., `3_ModernEarthPhotochemistry`), most of which contain Jupyter Notebooks that we will run for the coding demos and problem sets. Each notebook has two versions: an incomplete version that we will run in the workshop and a completed version (indicated by the word `COMPLETED` in their name). `COMPLETED` notebooks contain a complete set of code/notes for that particular lesson and also give the answers to the problem sets, in case you get stuck. 
+The workshop will walk through each of the directories in this repository (e.g., `3_ModernEarthPhotochemistry`), most of which contain Jupyter Notebooks that we will run for the coding demos and problem sets. Each notebook has two versions: an incomplete version that we will run in the workshop and a completed version (indicated by the word `COMPLETED` in their name). `COMPLETED` notebooks contain a complete set of code/notes for that particular lesson and also give the answers to the problem sets, in case you get stuck. 
 
 If, miraculously, we have extra time during any workshop day, then we will take a look at the notebooks in the `ExtraTutorials` folder.
 
