@@ -34,7 +34,7 @@ Nov. 6th, Kuiper Space Sciences Building, Room 331, from 10:00 AM - 1:00 PM
 
 - `5_ClimateBackground` - Short introductory lecture on climate modeling (~15 min)
 - Break (5 min)
-- `6_ClimateModelingIntro` - Coding demo: Basics of climate modeling with Photochem (~45 min)
+- `6_ClimateTutorial` - Coding demo: Basics of climate modeling with Photochem (~45 min)
 - Break (5 min)
 - `7_HabitableZone` - Problem set: Reproducing the Habitable Zone with Photochem (~90 min)
 - `ExtraTutorials` - If there is extra time
