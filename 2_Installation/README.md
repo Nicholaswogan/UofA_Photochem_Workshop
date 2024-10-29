@@ -15,6 +15,8 @@ curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mi
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
+Note: if you are using a Linux machine or WSL, and you don't have `curl` installed, then first install it with `sudo apt-get install curl`.
+
 To ensure the installation worked, open up a new terminal window and run the command `conda --version`.
 
 ## Step 2: Install photochem with conda
