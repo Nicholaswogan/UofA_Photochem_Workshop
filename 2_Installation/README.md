@@ -21,10 +21,10 @@ To ensure the installation worked, open up a new terminal window and run the com
 
 ## Step 2: Install photochem with conda
 
-The below command creates a new Python environment called `workshop` with Photochem v0.6.0 installed. The command also installs `matplotlib`, `jupyter` and `threadpoolctl`, which will be useful later in the workshop.
+The below command creates a new Python environment called `workshop` with Photochem v0.6.1 installed. The command also installs `matplotlib` and `jupyter` which are needed to make plots and run notebooks.
 
 ```sh
-conda create -n workshop -c conda-forge photochem=0.6.0 matplotlib jupyter threadpoolctl
+conda create -n workshop -c conda-forge photochem=0.6.1 matplotlib jupyter
 conda activate workshop # Activate the environment
 ```
 
