@@ -34,7 +34,7 @@ export CXX="$(which clang)"
 export FC="$(which gfortran)"
 
 unset CMAKE_ARGS
-export CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$CONDA_PREFIX"
+export CMAKE_ARGS="-DCMAKE_PREFIX_PATH=$CONDA_PREFIX -DCMAKE_POSITION_INDEPENDENT_CODE=ON"
 export CONDA_PREFIX_SAVE=$CONDA_PREFIX
 unset CONDA_PREFIX
 ```
@@ -83,7 +83,7 @@ export CONDA_PREFIX_SAVE=$CONDA_PREFIX
 unset CONDA_PREFIX
 
 # Configure
-cmake .. -DCMAKE_PREFIX_PATH=$CONDA_PREFIX_SAVE -DBUILD_PYTHON_PHOTOCHEM=ON -DBUILD_WITH_OPENMP=ON -DSKBUILD_CMAKE_MODULE_DIR=$(python -c "from skbuild import __file__; print(__file__.strip('__init__.py')+'resources/cmake')")
+cmake .. -DCMAKE_PREFIX_PATH=$CONDA_PREFIX_SAVE -DBUILD_PYTHON_PHOTOCHEM=ON -DBUILD_WITH_OPENMP=ON -DCMAKE_POSITION_INDEPENDENT_CODE=ON -DCMAKE_BUILD_TYPE=Release -DSKBUILD_CMAKE_MODULE_DIR=$(python -c "from skbuild import __file__; print(__file__.strip('__init__.py')+'resources/cmake')")
 
 # Build and install
 cmake --build . -j && cmake --install .
