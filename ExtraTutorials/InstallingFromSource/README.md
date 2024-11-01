@@ -5,10 +5,9 @@ Building Photochem from source can be challenging, which is why `conda` is the p
 First, lets create a new conda environment called `test` with all the photochem dependencies
 
 ```sh
-# 
-mamba create -n test -c conda-forge photochem_clima_data=0.2.0 python numpy scipy pyyaml numba astropy h5py threadpoolctl scikit-build cmake ninja cython fypp pip clang gfortran wget git jupyter matplotlib
+conda create -n test -c conda-forge photochem_clima_data=0.2.0 python numpy scipy pyyaml numba astropy h5py threadpoolctl scikit-build cmake ninja cython fypp pip clang gfortran wget git jupyter matplotlib
 
-mamba activate test
+conda activate test
 ```
 
 Here is a breakdown of the dependencies:
