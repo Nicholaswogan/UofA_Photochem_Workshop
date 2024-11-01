@@ -6,7 +6,7 @@ This repository contains the tutorials for the Nov. 5th & 6th workshop on the [P
 
 Both workshop days will cover the same material as follows:
 
-- `1_PhotochemistryBackground` - Short introductory lecture on photochemical & climate modeling (~15 min)
+- `1_PhotochemistryClimateBackground` - Short introductory lecture on photochemical & climate modeling (~15 min)
 - `2_Installation` - Installing the Photochem software (20 min)
 - Break (5 min)
 - `3_ModernEarthPhotochemistry` - Coding demo: Modeling the Modern Earth's photochemistry with Photochem (~30 min)
