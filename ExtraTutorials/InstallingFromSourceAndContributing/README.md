@@ -1,4 +1,4 @@
-# Building Photochem from source
+# Building Photochem from source and contributing
 
 Building Photochem from source can be challenging, which is why `conda` is the preferred installation route. But in order to change the underlying Fortran, you need to be able to build the code from source.
 
@@ -68,7 +68,7 @@ export CMAKE_PREFIX_PATH="$(pwd)/mylibs"
 
 ## Building in place without `pip`
 
-It is also useful to build the code without installing it to your Python installation. Below are the commands for accomplishing this.
+It is also useful to build the code without installing it. Below are the commands for accomplishing this.
 
 ```sh
 mkdir build
@@ -88,4 +88,14 @@ cmake .. -DCMAKE_PREFIX_PATH=$CONDA_PREFIX_SAVE -DBUILD_PYTHON_PHOTOCHEM=ON -DBU
 cmake --build . -j && cmake --install .
 ```
 
-So now, you can run python code at the root of the `photochem` directory, and it will use the code that you just installed.
+New binary filles will have now appeared in the `photochem/` directory. So now, you can run python code at the root of the `photochem` directory, and it will use the binaries you just built.
+
+## Contributing
+
+Contribute to the code in the same way you would contribute to any open source software on Github:
+
+1. Make a fork of photochem
+2. git clone your fork of photochem
+3. Make a new branch, giving it a name that makes sense given the feature you want to contribute (e.g., `git branch newfeature`)
+4. Commit changes to this new branch
+5. When you are happy with the changes, create a "pull request" for the code in your branch to be merged into the photochem `main` branch

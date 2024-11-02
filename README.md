@@ -9,8 +9,9 @@ Both workshop days will cover the same material as follows:
 - `1_PhotochemistryClimateBackground` - Short introductory lecture on photochemical & climate modeling (~15 min)
 - `2_Installation` - Installing the Photochem software (20 min)
 - Break (5 min)
-- `3_ModernEarthPhotochemistry` - Coding demo: Modeling the Modern Earth's photochemistry with Photochem (~30 min)
+- `3_ModernEarthPhotochemistry` - Coding demo: Modeling the Modern Earth's photochemistry with Photochem (~40 min)
 - Break (5 min)
 - `4_ClimateTutorial` - Coding demo: Basics of climate modeling with Photochem (~30 min)
-- `5_TRAPPIST1e` - 
+- Break (5 min)
+- `5_TRAPPIST1e` - Problem set: a photochemistry and climate simulation of TRAPPIST-1e (60 min)
   
