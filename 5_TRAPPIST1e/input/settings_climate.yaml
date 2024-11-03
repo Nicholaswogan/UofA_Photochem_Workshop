@@ -1,0 +1,17 @@
+
+atmosphere-grid:
+  number-of-layers: 50
+  
+planet:
+  planet-mass: 4.132740e+27 # 0.692x Earth mass (grams) Agol et al. (2021)
+  planet-radius: 5.867852e+08 # 0.920x Earth Radius (cm) Agol et al. (2021)
+  number-of-zenith-angles: 1
+  surface-albedo: 0.1
+  
+optical-properties:
+  ir:
+    k-method: RandomOverlapResortRebin
+    opacities: {k-distributions: on, CIA: on, rayleigh: on}
+  solar:
+    k-method: RandomOverlapResortRebin
+    opacities: {k-distributions: on, CIA: on, rayleigh: on}
