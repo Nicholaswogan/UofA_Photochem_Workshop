@@ -15,3 +15,6 @@ Both workshop days will cover the same material as follows:
 - Break (5 min)
 - `5_TRAPPIST1e` - Problem set: a photochemistry and climate simulation of TRAPPIST-1e (60 min)
   
+## Survey
+
+After the workshop, fill out this survey: https://bit.ly/PhotochemWrkshp
