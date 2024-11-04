@@ -34,32 +34,24 @@ def plot_atmosphere(pc, species = ['H2O','N2','O2','CO2','O3','CH4']):
 def find_steady_state(pc, plot=True, plot_species=['H2O','N2','O2','CO2','CH4','CO','H2'], plot_freq=50, xlim=(1e-10,1)):
     "Integrates the model to a steady state."
     
-    pc.initialize_stepper(pc.wrk.usol) 
-    converged = False
-    nsteps = 0
-    nerrors = 0
-    while not converged:
+    pc.initialize_robust_stepper(pc.wrk.usol) 
+    while True:
         if plot:
             clear_output(wait=True)
             fig,ax = plot_atmosphere(pc, plot_species)
             ax.set_xlim(*xlim)
             plt.show()
         for i in range(plot_freq):
-            try:
-                tn = pc.step()
-            except PhotoException as e:
-                pc.initialize_stepper(np.clip(pc.wrk.usol,a_min=1e-40,a_max=np.inf))
-                nerrors += 1
-                if nerrors > 10:
-                    raise PhotoException(e)
-            nsteps += 1
-            converged = pc.check_for_convergence()
-            if converged:
+            give_up, converged = pc.robust_step()
+            if give_up or converged:
                 break
-            if nsteps > 1000:
-                pc.initialize_stepper(np.clip(pc.wrk.usol,a_min=1e-40,a_max=np.inf))
-                nsteps = 0
-    pc.destroy_stepper()
+        if give_up or converged:
+            break
+
+    if give_up:
+        converged = False
+
+    return converged
 
 def haze_production_rate(pc):
     "Computes the haze production rate in g/cm^2/s"

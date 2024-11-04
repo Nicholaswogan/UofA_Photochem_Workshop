@@ -17,12 +17,12 @@ Here is a breakdown of the dependencies:
 - `wget git` - Needed to download the Photochem source from the internet
 - `jupyter matplotlib` - Only needed later for running notebooks/plotting
 
-Next, we need to download Photochem from the internet with `git`. Also, here we checkout the version v0.6.1. This is necessary because future Photochem versions might have slightly different build instructions
+Next, we need to download Photochem from the internet with `git`. Also, here we checkout the version v0.6.2. This is necessary because future Photochem versions might have slightly different build instructions
 
 ```sh
 git clone https://github.com/Nicholaswogan/photochem.git
 cd photochem
-git checkout v0.6.1
+git checkout v0.6.2
 ```
 
 We need to set some environment variables to help the build find compilers and libraries.
