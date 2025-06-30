@@ -1,20 +1,3 @@
 # U of A Photochem Workshop
 
-This repository contains the tutorials for the Nov. 5th & 6th workshop on the [Photochem](https://github.com/Nicholaswogan/photochem) software at the University of Arizona, Tucson.
-
-## Workshop Schedule
-
-Both workshop days will cover the same material as follows:
-
-- `1_PhotochemistryClimateBackground` - Short introductory lecture on photochemical & climate modeling (~15 min)
-- `2_Installation` - Installing the Photochem software (20 min)
-- Break (5 min)
-- `3_ModernEarthPhotochemistry` - Coding demo: Modeling the Modern Earth's photochemistry with Photochem (~40 min)
-- Break (5 min)
-- `4_ClimateTutorial` - Coding demo: Basics of climate modeling with Photochem (~30 min)
-- Break (5 min)
-- `5_TRAPPIST1e` - Problem set: a photochemistry and climate simulation of TRAPPIST-1e (60 min)
-  
-## Survey
-
-After the workshop, fill out this survey: https://bit.ly/PhotochemWrkshp
+This repository contains tutorials for the [Photochem](https://github.com/Nicholaswogan/photochem) software. These notebooks were originally used in a workshop on Photochem on Nov. 5th & 6th of 2024, but now serve as an additional resource for understanding Photochem. First, check out the `2_Installation` directory to learn how to install Photochem. Next, checkout the tutorials in the remaining directories.
